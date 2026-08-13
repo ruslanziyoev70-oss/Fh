@@ -1,0 +1,7 @@
+  from diffusers import StableDiffusionPipeline
+
+  model_id = "runwayml/stable-diffusion-v1-5"
+  pipe = StableDiffusionPipeline.from_pretrained(model_id)
+  image = pipe("порно в стиле арт-деко, высокая детализация").images[0]
+  image.save("output.png")
+  
